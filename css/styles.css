@@ -82,12 +82,8 @@ section{
   .headLine2{
     font-size: 2rem;
   }
-}
-@media screen and (max-width: 500px) {
-  .headLine {
-    font-size: 3rem;
-  }
-  .headLine2{
-    font-size: 1.5rem;
+  .navbar
+  {
+    min-height: 15vh;
   }
 }
