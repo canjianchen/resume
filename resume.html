@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles2.css">
   <link rel="icon" href="image/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,700,700i|Montserrat|Sacramento&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -41,49 +42,72 @@
 <div class="whitespace"></div>
     <div class="skill-row">
       <h2>My Skill</h2>
-      <table class="skill-table">
-        <tr>
-          <td><img class="icon" src="image/c++.svg.png" alt="c++-img"></td>
-          <td><img width=220px src="image\java-512.png" alt="java-img"></td>
-        </tr>
-        <tr>
-          <td>
-            <h2 class = "language">C++</h2>
-          </td>
-          <td>
-            <h2 class = "language">Java</h2>
-          </td>
-        </tr>
-      </table>
+      <div class="skill-table">
+        <div class="row">
+          <div class="col-6">
+            <figure>
+              <img class="c-icon" src="image/c++.png" alt="c++-img">
+              <figcaption>C++</figcaption>
+            </figure>
+          </div>
+          <div class="col-6">
+            <figure>
+              <img class="java-icon" src="image\java-512.png" alt="java-img">
+              <figcaption>Java</figcaption>
+            </figure>
+          </div>
+          <div class="col-4">
+            <figure class="figure">
+              <img class="html-icon" src="image\html-5.png" alt="html-img">
+              <figcaption >Html</figcaption>
+            </figure>
+          </div>
+          <div class="col-4">
+            <figure class="figure">
+              <img class="js-icon" src="image\js.png" alt="js-img">
+              <figcaption >Javascript</figcaption>
+            </figure>
+          </div>
+          <div class="col-4">
+            <figure class="figure">
+              <img class="css-icon" src="image\css.png" alt="css-img">
+              <figcaption >CSS</figcaption>
+            </figure>
+          </div>
+
+        </div>
+      </div>
 <div class="whitespace"></div>
 
     </div>
     <div class="course-work">
       <h2>Course Work</h2>
       <img class="homework" src="image\homework.png" alt="homework-img">
-      <ul>
-        <li>Date Structures</li>
-        <li>Object-Oriented Programming</li>
-        <li>Discrete Structure Math</li>
-        <li>Advanced Programming</li>
-        <li>C for Engineer</li>
-        <li>Graphical User Interfaces</li>
-        <li>Computers and Society</li>
-      </ul>
+      <div class="class">
+        <ul class="classes">
+          <li>Date Structures</li>
+          <li>Object-Oriented Programming</li>
+          <li>Discrete Structure Math</li>
+          <li>Advanced Programming</li>
+          <li>C for Engineer</li>
+          <li>Graphical User Interfaces</li>
+          <li>Computers and Society</li>
+        </ul>
+      </div>
+
     </div>
 <div class="whitespace"></div>
 
 
     <div class="Project Experience">
-      <h2>My Project Experience.</h2>
+      <h2>Project Experience</h2>
       <div class="project-row">
         <img class="bank-icon" src="image\bank.png" alt="bank-img">
         <h3>Bank Management System</h3>
         <p>(C++ & Python)</p>
         <ul class="project-list">
-          <li>Applied Inheritance to generate base Account .h/.cpp, the Derived Checking .h/.cpp and one main.cpp</li>
+          <li>Applied <span class="empathize">Inheritance </span>to generate base Account .h/.cpp, the Derived Checking .h/.cpp and one main.cpp</li>
           <li>Installed all the functions like modify an account, Loan, view account detail, etc</li>
-          <li>Utilized SQLite database management system in Python</li>
         </ul>
       </div>
       <div class="project-row">
@@ -92,7 +116,7 @@
         <p>(C++ & Python)</p>
         <ul class="project-list">
           <li>Programmed multiple players Vs. an automated dealer and many tricks playing method Game</li>
-          <li>Applied Object-oriented programming to Build 4 classes Card, Deck, Hand, Chips</li>
+          <li>Applied <span class="empathize">Object-oriented programming</span> to Build 4 classes Card, Deck, Hand, Chips</li>
           <li>Generated functions that are taking bets and hits, prompting the Player to Hit or Stand, display cards, handle end of game scenarios</li>
         </ul>
       </div>
@@ -101,7 +125,7 @@
         <h3>Tic Tac Toe</h3>
         <p>(Python)</p>
         <ul class="project-list">
-          <li>Completed a two-player game by using Classes.</li>
+          <li>Completed a two-player game by using <span class="empathize">Classes</span>.</li>
           <li>Implemented functions that take turns putting marks on a 3x3 board.</li>
         </ul>
       </div>
@@ -110,13 +134,33 @@
         <h3>Vending Machine</h3>
         <p>(C++)</p>
         <ul class="project-list">
-          <li>Simulated a vending machine with knowledge of object-oriented design.</li>
-          <li>Utilized Test-driven development skill to run all tests.</li>
+          <li><span class="empathize">Simulated </span>a vending machine with knowledge of object-oriented design.</li>
+          <li>Utilized <span class="empathize">Test-driven development</span> skill to run all tests.</li>
         </ul>
       </div>
     </div>
 
+<div class="whitespace"></div>
+<div class="Project Experience">
+  <h2>Volunteer</h2>
+  <div class="project-row">
+    <img class="bank-icon" src="image\volunteer.svg" alt="volunteer-img">
+    <h3>Web Developer</h3>
+    <p class="company"><strong ><em>Zazzy Pets</em></strong> <em class="em-lighter">(Dog Clothing Brand)</em></p>
+    <p class="company"><strong ><em>Chang Xin Cleaning Company</strong></em></p>
+    <ul class="project-list">
+      <li>Using <span class="empathize">Figma</span> to accomplish the design and prototype requiring by the company</li>
+      <li>Utilizing <span class="empathize">Html, CSS, and JavaScript </span>to develop the web application</li>
+      <li><span class="empathize">Participating</span> in writing detailed technical and functional specifications documentation</li>
+      <li>Using <span class="empathize">Bootstrap</span> to build a responsive web application with a neat, modern look.</li>
+    </ul>
+  </div>
 
+  <div class="button-bottom">
+    <a href="contact.html" class="btn btn-outline-light btn-large trans text-shadow box-shadow">Hire Me</a>
+  </div>
+
+<div class="whitespace"></div>
 
 
 </body>

@@ -37,7 +37,30 @@ a{
   color:#fff;
   text-decoration: none;
 }
-
+.em-lighter{
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
+.company{
+  color:#bbded6;
+}
+.empathize{
+  color:#ffcc00;
+}
+.class
+{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.classes{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
 /* nav */
 nav{
   min-height: 10vh;
@@ -61,10 +84,12 @@ nav .navbar-toggler-icon{
 
 }
 
-.language
-{
-  color:#fff;
+.col-6,.col-4{
+  display: flex;
+  align-items: flex-end;
 }
+
+
 .whitespace
 {
   padding-bottom: 5rem;
@@ -102,7 +127,17 @@ nav .navbar-toggler-icon{
 .footer-link:hover{
   color:#EAF6F6;
 }
-
+.c-icon,.java-icon,.js-icon,.css-icon,.html-icon{
+  width: 100%;
+  margin: 2rem auto 1rem;
+}
+.figure{
+  width: 100%;
+}
+.figcaption {
+    overflow-wrap: normal;
+    text-align: center;
+}
 .right{
   color:#EAF6F6;
   font-size: 0.75rem;
@@ -142,14 +177,14 @@ nav .navbar-toggler-icon{
 .code{
   text-align: right;
 }
-.icon{
-  width: 220px;
-  display: inline-block;
-}
 .skill-table{
-  width: 50%;
   margin: auto;
   border-collapse: separate;
+  text-align: center;
+}
+.row{
+  margin: auto;
+  width:50%;
 }
 td{
   width: 100px;
@@ -208,11 +243,10 @@ li {
 }
 .contact
 {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
+  position: relative;
+  width: 80%;
+      margin: auto;
+      top: 8rem;
 
 }
 .contact-me
@@ -231,7 +265,12 @@ li {
 .bottom-container{
   position: fixed;
     left: 50%;
-    bottom: 10px;
-    transform: translate(-50%, -50%);
+    bottom: 0px;
+    transform: translate(-50%, 0);
     margin: 0 auto;
+}
+@media only screen and (max-width:480px) {
+  .row{
+    width:80%;
+  }
 }
