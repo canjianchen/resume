@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body
+{
+  font-family: 'Montserrat',sans-serif ;
+}
+.slider{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100vh;
+background: linear-gradient(0deg, rgba(46,33,33,1) 0%, #434e52 50%,rgba(46,33,33,1) 120%);
+z-index: -1;
+}
+nav{
+  min-height: 10vh;
+  color:white;
+}
+nav .navbar-toggler-icon{
+  color: white;
+}
+a{
+  color: #fff;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+a:hover
+{
+  color:#0c7b93;
+  text-decoration: none;
+}
+li{
+  padding: 0.5rem 1rem;
+
+}
+
+/* picture */
+section{
+  display: flex;
+  height:80vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero
+{
+  width: 70%;
+  height: 90%;
+}
+.hero img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
+.headLine{
+  position: absolute;
+  top:70%;
+  left:15%;
+  font-size: 6.25rem;
+  transform: translate(-20%,-70%);
+  color: white;
+  font-family: 'Sacramento', cursive;
+}
+
+.headLine2{
+  position: absolute;
+  top:80%;
+  left:20%;
+  font-size: 40px;
+  transform: translate(-20%,-70%);
+  color: white;
+  font-family: 'Caveat', cursive;
+}
+@media screen and (max-width: 1028px) {
+  .headLine {
+    font-size: 4rem;
+  }
+  .headLine2{
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .headLine {
+    font-size: 3rem;
+  }
+  .headLine2{
+    font-size: 1.5rem;
+  }
+}
